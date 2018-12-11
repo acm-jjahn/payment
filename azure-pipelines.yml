@@ -10,6 +10,7 @@ variables:
 steps:
 - powershell: |
     Write-Host '##vso[task.setvariable variable=GOPATH]$(System.DefaultWorkingDirectory)'
+  displayName: 'Set GOPATH environment variable'
 
 - task: CmdLine@2
   inputs:
